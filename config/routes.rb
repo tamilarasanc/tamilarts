@@ -6,8 +6,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'welcome/login'
+  get '/user/contact' , :to => 'user#contact'
 
+  post 'user/contact'
   resources :user
 
   post 'user/update'

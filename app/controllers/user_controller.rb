@@ -4,21 +4,25 @@ class UserController < ApplicationController
     def create
 
       debugger
-      @user = User.new(ad_params)
+      @user = User.new(:name => params[:name], :email => params[:email], :password => params[:password], :mobile_number => params[:mobile])
 
-      @user.save UserMailer.user_email(@user).deliver
-         # redirect_to root_url
+      @user.save!
+      #UserMailer.user_email(@user).deliver
+         redirect_to root_url
         flash[:notice] ="Succesfully signed up"
 
-       render 'update'
+       # render 'update'
     end
 
     def update
 
-      debugger
+      redirect_to root_url
 
     end
 
+    def contact
+      redirect_to root_url
+    end
     def show
 
     end
