@@ -1,0 +1,62 @@
+
+<style>
+    .nav-tabs {
+        margin-bottom: 15px;
+    }
+    .sign-with {
+        margin-top: 25px;
+        padding: 20px;
+    }
+    div#OR {
+        height: 30px;
+        width: 30px;
+        border: 1px solid #C2C2C2;
+        border-radius: 50%;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: center;
+        font-size: 12px;
+        float: right;
+        position: absolute;
+        right: -16px;
+        top: 40%;
+        z-index: 1;
+        background: #DFDFDF;
+    }
+    .col-md-9 {
+        margin-left: 14px;
+        width: 94%;
+    }
+</style>
+
+
+
+<div class="navbar navbar-fixed-top" data-activeslide="1">
+  <div class="container">
+
+    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+
+    <div class="nav-collapse collapse navbar-responsive-collapse">
+      <ul class="nav row">
+        <li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+        <li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">ABOUT US</span></a></li>
+        <li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
+        <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">PROCESS</span></a></li>
+        <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">CLIENTS</span></a></li>
+        <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a></li>
+        <!--<li data-slide="7" class="col-12 col-sm-2"><a id="menu-link-7" href="welcome/login" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">LOGIN / SIGN UP</span></a></li>-->
+        <li data-slide="7"  class ="col-12 col-sm-2"> <a id='menu-link-7' href="#" data-toggle="modal" data-target="#myModal"><span class="icon icon-envelope"></span>
+        <span class="text">LOGIN / SIGN UP</span></a>
+       </li>
+      </ul>
+        <%= render partial: 'welcome/index1' %>
+    </div><!-- /row -->
+  </div><!-- /container -->
+</div><!-- /Slide 6 -->
+

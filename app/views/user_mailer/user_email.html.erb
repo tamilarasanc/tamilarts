@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<p>
+  Dear Sir/Madam,
+</p>
+<p>
+  This is a kind request to allow to use Tamil Arts Website
+</p>
+<p>
+
+  Congradulation!!!<%= @user.name %>,we are welcome you to our Website
+  <br>
+  you can view our Post and upload your photos now onwards!!!!
+  <%= hidden_field(:user,:id, :value => @user.id) %>
+  <a href="#" class="activate">Activate</a>
+
+</p>
+Thank you
+<p>
+  With Regards,</br>
+</p>
+<%#= @leave_record.employee_detail.emp_name %>
+<%= "Tamil Arts" %>
+
+</body>
+</html>
+
+<script>
+  $('.activate').click(function(){
+
+      var user_id =$('#user_id').val();
+
+      $.ajax({
+
+          type: "GET",
+          url: '/user/update?&user_id=' + user_id,
+          beforeSend: function (xhr) {
+              xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+          },
+
+          success: function (data) {
+
+              $('#slide-1').html(data);
+              //window.location.reload();
+
+          }
+      });
+
+  });
+
+
+
+</script>
