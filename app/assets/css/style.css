@@ -556,6 +556,9 @@ body {
 	z-index: 1000;
 }
 
+.myClass{
+    border :1px solid red;
+}
 #arrows div {
 	background-image: url('website-arrows.png');
 	cursor: pointer;
@@ -563,7 +566,9 @@ body {
 	position: absolute;
 	width: 30px;
 }
-
+div#Registration {
+    margin-left: 9px;
+}
 #arrows div.disabled {
 	cursor: default;
 }
