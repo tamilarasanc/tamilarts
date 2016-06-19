@@ -217,7 +217,7 @@ body {
 
 #slide-1 {
 	/*background-image: url('bg1.jpg');*/
-    background-image: url('blue_ice.jpg');
+    background-image: url('blue_ice1.jpg');
 	color: #ffffff;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -245,7 +245,7 @@ body {
 
 @media (max-width: 767px) {
 	#slide-1 {
-        background-image: url('blue_ice.jpg');
+        background-image: url('blue_ice1.jpg');
 	}
 }
 
